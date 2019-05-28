@@ -96,6 +96,6 @@ class Demo(Robot): #Create a Robot
     
     def onTargetSpotted(self, botId, botName, botPos):#NECESARY FOR THE GAME
         "when the bot see another one"
-        self.fire(5)
+        # self.fire(5)
         self.rPrint("I see the bot:" + str(botId) + "on position: x:" + str(botPos.x()) + " , y:" + str(botPos.y()))
     

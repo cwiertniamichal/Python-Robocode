@@ -1,4 +1,4 @@
-#! /usr/bin/python
+#! /usr/bin/python3
 #-*- coding: utf-8 -*-
 
 import sys
@@ -9,7 +9,6 @@ sys.path.append(os.getcwd() + "/robotImages")
 sys.path.append(os.getcwd() + "/Robots")
 from window import MainWindow
 from PyQt4 import QtGui
-
 
 if __name__ == "__main__":
 

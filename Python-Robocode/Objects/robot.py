@@ -16,7 +16,7 @@ import time
 
 class Robot(QtGui.QGraphicsItemGroup):
     
-    def __init__(self,  mapSize, parent, repr):
+    def __init__(self,  mapSize, parent, repr, sess = None, model = None, memory = None):
         QtGui.QGraphicsItemGroup.__init__(self)
         #Attributes
         self.__mapSize = mapSize
@@ -144,7 +144,9 @@ class Robot(QtGui.QGraphicsItemGroup):
         self.__items = set([self, self.__base, self.__gun, self.__radar, self.__radarField, self.__largeRadarField, self.__thinRadarField, self.__roundRadarField])
         
         #init the subclassed Bot
-        self.init()
+        print sess
+
+        self.init(sess, model, memory)
         
         self.__currentAnimation = []
         
